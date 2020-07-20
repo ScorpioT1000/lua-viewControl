@@ -44,8 +44,8 @@ WM("viewControl", function(import, export, exportDefault)
   
   -- ========== SETTINGS & ACTIVE STATES ==========
   
-  -- @param pl Player
-  -- @param activate boolean
+  --- @param pl Player
+  --- @param activate boolean
   local activateForPlayer = function(pl, activate)
     if(not enabledStates[pl]) then
       return
@@ -99,8 +99,8 @@ WM("viewControl", function(import, export, exportDefault)
     end)
   end
   
-  -- @param pl Player
-  -- @param enable boolean
+  --- @param pl Player
+  --- @param enable boolean
   local enableForPlayer = function(pl, enable)
     if(enable) then
       updateActiveStateForPlayer(pl)
